@@ -9,9 +9,9 @@ import { TodoService } from '../../services/todo.service';
 })
 export class TodosComponent implements OnInit {
 
-  todos:Todo[];
+  todos: Todo[];
 
-  constructor(private todoService:TodoService) { }
+  constructor(private todoService: TodoService) { }
 
   ngOnInit() {
     this.todoService.getTodos().subscribe(todos => {

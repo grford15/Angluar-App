@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class TodoService {
 
-  todosUrl: string = 'https://jsonplaceholder.typicode.com/todos';
+  todosUrl = 'https://jsonplaceholder.typicode.com/todos';
   todosLimit = '?_limit=15';
 
   constructor(private http: HttpClient) { }
